@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0.0px"
+    android:keyHeight="@dimen/key_height"
+    android:keyWidth="10.000002%p"
+    android:verticalGap="0.0px" >
+
+    <Row>
+        <Key
+            android:codes="50001"
+            android:keyEdgeFlags="left"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50002"
+            android:keyLabel="2" />
+        <Key
+            android:codes="50003"
+            android:keyLabel="3" />
+        <Key
+            android:codes="50004"
+            android:keyLabel="4" />
+        <Key
+            android:codes="50005"
+            android:keyLabel="5" />
+        <Key
+            android:codes="50006"
+            android:keyLabel="6" />
+        <Key
+            android:codes="50007"
+            android:keyLabel="7" />
+        <Key
+            android:codes="50008"
+            android:keyLabel="8" />
+        <Key
+            android:codes="50009"
+            android:keyLabel="9" />
+        <Key
+            android:codes="50010"
+            android:keyEdgeFlags="right"
+            android:keyLabel="." />
+    </Row>
+    <Row>
+        <Key
+            android:codes="50011"
+            android:keyEdgeFlags="left"
+            android:keyLabel="+" />
+        <Key
+            android:codes="50012"
+            android:keyLabel="-" />
+        <Key
+            android:codes="50013"
+            android:keyLabel="×" />
+        <Key
+            android:codes="50014"
+            android:keyLabel="÷" />
+        <Key
+            android:codes="60000"
+            android:keyWidth="12.000000%p"
+            android:keyIcon="@drawable/pow" />
+        <Key
+            android:codes="60001"
+            android:keyWidth="12.000000%p"
+            android:keyIcon="@drawable/devide" />
+        <Key
+            android:codes="60002"
+            android:keyWidth="12.000000%p"
+            android:keyIcon="@drawable/sqar" />
+        <Key
+            android:codes="70000"
+            android:keyWidth="12.000000%p"
+            android:keyIcon="@drawable/sym_keyboard_left" />
+        <Key
+            android:codes="70001"
+            android:keyWidth="12.000000%p"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/sym_keyboard_right" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="50015"
+            android:horizontalGap="4.999995%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="x" />
+        <Key
+            android:codes="50016"
+            android:keyLabel="y" />
+        <Key
+            android:codes="50017"
+            android:keyLabel="f" />
+        <Key
+            android:codes="50018"
+            android:keyLabel="(" />
+        <Key
+            android:codes="50019"
+            android:keyLabel=")" />
+        <Key
+            android:codes="50020"
+            android:keyLabel="," />
+        <Key
+            android:codes="50021"
+            android:keyLabel="≈" />
+        <Key
+            android:codes="50022"
+            android:keyLabel="=" />
+        <Key
+            android:codes="70002"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/sym_keyboard_delete" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom" >
+        <Key
+            android:codes="50023"
+            android:keyEdgeFlags="left"
+            android:keyLabel="A" />
+        <Key
+            android:codes="50024"
+            android:keyLabel="θ" />
+        <Key
+            android:codes="80000"
+            android:keyLabel="sin" />
+        <Key
+            android:codes="80001"
+            android:keyLabel="cos" />
+        <Key
+            android:codes="80002"
+            android:keyLabel="tan" />
+        <Key
+            android:codes="80003"
+            android:keyLabel="ctan" />
+        <Key
+            android:codes="80004"
+            android:keyLabel="log" />
+        <Key
+            android:codes="80005"
+            android:keyLabel="ln" />
+        <Key
+            android:codes="70003"
+            android:keyWidth="20.000000%p"
+            android:keyEdgeFlags="right"
+            android:keyLabel="Solve" />
+
+        <!--
+    	<Key android:keyWidth="20.000004%p" android:codes="-2"
+			android:keyLabel="12#" />
+		<Key android:keyWidth="14.999998%p" android:codes="44"
+			android:keyLabel="," />
+		<Key android:keyWidth="29.999996%p" android:codes="32"
+			android:isRepeatable="true" android:keyIcon="@drawable/sym_keyboard_space" />
+		<Key android:keyWidth="14.999998%p" android:codes="46"
+			android:keyLabel="." />
+		<Key android:keyWidth="20.000004%p" android:codes="-3"
+			android:keyEdgeFlags="right" android:keyLabel="完成" />
+        -->
+    </Row>
+
+</Keyboard>
