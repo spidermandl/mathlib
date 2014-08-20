@@ -1,10 +1,7 @@
 package cn.key;
 
-import java.io.IOException;
-
-import org.xmlpull.v1.XmlPullParserException;
-
 import com.key.view.FormulaInputLayout;
+import com.key.view.MonoSymbolView;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,31 +26,40 @@ public class KeydemoActivity extends Activity {
 		ctx = this;
 		act = this;
 
-		edit = (EditText) this.findViewById(R.id.edit);
-		edit.setInputType(InputType.TYPE_NULL);
-
-		edit1 = (EditText) this.findViewById(R.id.edit1);
-
-		edit.setOnTouchListener(new OnTouchListener() {
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				new KeyboardUtil(act, ctx, edit).showKeyboard();
-				return false;
-			}
-		});
-
-		edit1.setOnTouchListener(new OnTouchListener() {
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				int inputback = edit1.getInputType();
-				edit1.setInputType(InputType.TYPE_NULL);
-				new KeyboardUtil(act, ctx, edit1).showKeyboard();
-				edit1.setInputType(inputback);
-				return false;
-			}
-		});
+//		edit = (EditText) this.findViewById(R.id.edit);
+//		edit.setInputType(InputType.TYPE_NULL);
+//
+//		edit1 = (EditText) this.findViewById(R.id.edit1);
+//
+//		edit.setOnTouchListener(new OnTouchListener() {
+//			@Override
+//			public boolean onTouch(View v, MotionEvent event) {
+//				new KeyboardUtil(act, ctx, edit).showKeyboard();
+//				return false;
+//			}
+//		});
+//
+//		edit1.setOnTouchListener(new OnTouchListener() {
+//			@Override
+//			public boolean onTouch(View v, MotionEvent event) {
+//				int inputback = edit1.getInputType();
+//				edit1.setInputType(InputType.TYPE_NULL);
+//				new KeyboardUtil(act, ctx, edit1).showKeyboard();
+//				edit1.setInputType(inputback);
+//				return false;
+//			}
+//		});
 		
 		formulaView = (FormulaInputLayout)findViewById(R.id.panel);
-
+		formulaView.addView(new MonoSymbolView(this));
+		formulaView.setInputTouchListener(new OnTouchListener() {
+			
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				EditText ed=(EditText)v;
+				new KeyboardUtil(act, ctx, ed).showKeyboard();
+				return true;
+			}
+		});
 	}
 }
